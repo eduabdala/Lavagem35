@@ -18,12 +18,12 @@ body {
 .logo-cabecalho img {
   width: 70px;
   height: 70px;
-  margin-left: 60px;
+  margin-left: 15px;
 }
 
 .container-link{
-  margin-right: 60px;  
-  display: none;
+  margin-right: 15px;  
+  display: flex;
 }
 
 ul li {
@@ -50,21 +50,46 @@ ul li a{
 
 
 @media (min-width: 834px){
-  .container-link{
+  .container-link {
+    margin-top: 8px;
+    margin-right: 60px;
     display: flex;
+  }
+
+  .logo-cabecalho img {
+    width: 70px;
+    height: 70px;
+    margin-left: 60px;
+  }
+  
+  ul li {
+    text-decoration: none;
+    display: inline;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  ul li a:hover {
+    background-color: royalblue;
+    color: white;
+    padding: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 50px;
+  }
+  
+  
+  ul li a {
+    text-decoration: none;
+    color: black;
   }
   .container-carro{
     margin-top: -300px;
   }
 }
 
-main{
-  margin-top:80px; 
-}
 
 .carro{
-  display: flex;
-  position: absolute;
   margin-top: -80px;
   width: 100%;
   height: auto;
@@ -72,20 +97,26 @@ main{
   opacity: 90%;
 }
 
-.link-whatsapp{
-  text-decoration: none;
-  color: white;
-}
-
-.link-whatsapp img{
-  width: 60px;
-}
-
-.botao-zap{
+.botao-whatsapp{
   display: flex;
-  width: 150px;
-  height: 60px;
-  border-radius: 10px;
-  background-color: black;
-  align-items: center;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index: 9;
+}
+.botao-whatsapp img{
+  width: 70px;
+}
+
+.rodape{
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  height: 120px;
+  bottom: 0px;
+  background-color: royalblue;
+}
+
+.logo-rodape{
+  width: 70px;
 }
